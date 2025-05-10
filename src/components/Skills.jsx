@@ -10,7 +10,6 @@ import {
   FaDocker,
   FaGitAlt,
   FaLinux,
-  FaFigma,
   FaAws,
 } from "react-icons/fa";
 import {
@@ -26,11 +25,19 @@ import {
   SiFirebase,
   SiVercel,
   SiVite,
+  SiLangchain,
+  SiFastapi,
+  SiN8N,
+  SiMake,
+  SiVoipdotms,
+  SiSlack
 } from "react-icons/si";
-import { TbBrandVscode } from "react-icons/tb";
-import { BsFileEarmarkCode, BsGrid1X2 } from "react-icons/bs";
-import { MdAnimation } from "react-icons/md";
+import { TbBrandVscode, TbBrandOpenai, TbAutomation, TbBrandZapier } from "react-icons/tb";
+import { BsFileEarmarkCode, BsGrid1X2, BsRobot } from "react-icons/bs";
+import { MdAnimation, MdSupportAgent } from "react-icons/md";
 import { FcWorkflow } from "react-icons/fc";
+import { LuSpeech } from "react-icons/lu";
+import { SlSpeech } from "react-icons/sl";
 
 const SkillCard = ({ icon: Icon, title, skills, color }) => (
   <Card className="group relative overflow-hidden bg-gray-900/80 border-gray-700 hover:scale-[1.02] transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/20">
@@ -66,6 +73,34 @@ const SkillCard = ({ icon: Icon, title, skills, color }) => (
 
 const SkillsSection = () => {
   const skillCategories = [
+    {
+      icon: BsRobot,
+      title: "AI/ML Development",
+      color: "text-purple-400",
+      skills: [
+        { name: "ChatGPT", icon: <TbBrandOpenai className="w-4 h-4 text-[#9CA3AF]" /> },
+        {
+          name: "LangChain",
+          icon: <SiLangchain className="w-4 h-4 text-[#646CFF]" />,
+        },
+        {
+          name: "AI Agents",
+          icon: <MdSupportAgent className="w-4 h-4 text-[#61DAFB]" />,
+        },
+        {
+          name: "RAG",
+          icon: <MdAnimation className="w-4 h-4 text-[#F05032]" />,
+        },
+        {
+          name: "Whisper API",
+          icon: <LuSpeech className="w-4 h-4 text-[#339933]" />,
+        },
+        {
+          name: "TTS Engines",
+          icon: <SlSpeech className="w-4 h-4 text-[#1572B6]" />,
+        },
+      ],
+    },
     {
       icon: Code2,
       title: "Frontend Development",
@@ -108,6 +143,10 @@ const SkillsSection = () => {
           icon: <FaPython className="w-4 h-4 text-[#3776AB]" />,
         },
         {
+          name: "FastAPI",
+          icon: <SiFastapi className="w-4 h-4 text-green-800" />,
+        },
+        {
           name: "PostgreSQL",
           icon: <SiPostgresql className="w-4 h-4 text-[#336791]" />,
         },
@@ -126,22 +165,29 @@ const SkillsSection = () => {
       ],
     },
     {
-      icon: Layout,
-      title: "UI/UX Design",
-      color: "text-purple-400",
+      icon: TbAutomation,
+      title: "Automation & Integrations",
+      color: "text-yellow-400",
       skills: [
-        { name: "Figma", icon: <FaFigma className="w-4 h-4 text-[#F24E1E]" /> },
         {
-          name: "Responsive Design",
-          icon: <Layout className="w-4 h-4 text-[#38B2AC]" />,
+          name: "N8N",
+          icon: <SiN8N className="w-4 h-4 text-[#FF4081]" />,
         },
         {
-          name: "Wireframing",
-          icon: <BsGrid1X2 className="w-4 h-4 text-[#9CA3AF]" />,
+          name: "Make.com",
+          icon: <SiMake className="w-4 h-4 text-[#E10098]" />,
         },
         {
-          name: "Prototyping",
-          icon: <MdAnimation className="w-4 h-4 text-[#F59E0B]" />,
+          name: "Zapier",
+          icon: <TbBrandZapier className="w-4 h-4 text-[#FF6D00]" />,
+        },
+        {
+          name: "VoIP",
+          icon: <SiVoipdotms className="w-4 h-4 text-[#3178C6]" />,
+        },
+        {
+          name: "Slack API",
+          icon: <SiSlack className="w-4 h-4 text-[#E34F26]" />,
         },
       ],
     },
@@ -185,29 +231,6 @@ const SkillsSection = () => {
         },
         { name: "Vercel", icon: <SiVercel className="w-4 h-4 text-white" /> },
         { name: "Vite", icon: <SiVite className="w-4 h-4 text-[#646CFF]" /> },
-      ],
-    },
-    {
-      icon: Paintbrush,
-      title: "Creative Skills",
-      color: "text-yellow-400",
-      skills: [
-        {
-          name: "UI Animation",
-          icon: <MdAnimation className="w-4 h-4 text-[#FF4081]" />,
-        },
-        {
-          name: "SVG Animation",
-          icon: <MdAnimation className="w-4 h-4 text-[#00C853]" />,
-        },
-        {
-          name: "3D Modeling",
-          icon: <Cpu className="w-4 h-4 text-[#7C4DFF]" />,
-        },
-        {
-          name: "Motion Graphics",
-          icon: <MdAnimation className="w-4 h-4 text-[#FF6D00]" />,
-        },
       ],
     },
   ];

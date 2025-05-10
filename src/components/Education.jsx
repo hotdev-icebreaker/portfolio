@@ -15,25 +15,30 @@ const EducationSection = () => {
 
   const educationData = [
     {
-      degree: "Secondary School Certificate (SSC)",
-      school: "Natore Textile Institute",
+      degree: "Bachelor's Degree",
+      school: 'National Technical University of Ukraine "Igor Sikorsky Kyiv Polytechnic Institute"',
       mascot: "📘",
-      year: "2019-2021",
-      achievements: ["GPA: 4.89", "Subject: Science"],
-      skills: ["Mathematics", "Physics", "Chemistry", "Biology"],
+      year: "2013-2017",
+      achievements: ["GPA: 4.89", "Subject: Computer Science"],
+      skills: ["OpenAI", "LLM", "ChatGPT", "LangChain", "RAG"],
       description:
-        "Focused on core science subjects with emphasis on practical laboratory work and scientific research methodologies.",
+        "Computer Science graduate from Kyiv Polytechnic, where I built the foundation for AI-driven innovation.",
     },
     {
-      degree: "Higher Secondary Certificate (HSC)",
-      school: "Dottopara Model Degree College",
-      mascot: "📗",
-      year: "2021-2023",
-      achievements: ["GPA: 4.25", "Subject: Arts"],
-      skills: ["Literature", "Social Studies", "Economics", "History"],
+      degree: "AI & LLM Certifications",
+      school: 'Various Platforms (DeepLearning.AI, OpenAI, LangChain, AWS, etc.)',
+      mascot: "🎓",
+      year: "2017-present",
+      achievements: [
+        "GPT-4 Prompt Engineering by OpenAI",
+        "LangChain for LLM Apps",
+        "Deep Learning Specialization (Andrew Ng)",
+        "AWS Certified Machine Learning – Specialty"
+      ],
+      skills: ["LLMs", "Prompt Engineering", "LangChain", "RAG", "Whisper", "Vector DBs", "AI Agents"],
       description:
-        "Developed strong analytical and critical thinking skills through comprehensive study of humanities and social sciences.",
-    },
+        "A multi-year journey of mastering real-world AI systems, from LLMs and voice to scalable AI architectures.",
+    }
   ];
 
   const containerVariants = {
@@ -73,8 +78,7 @@ const EducationSection = () => {
             Educational Journey
           </h2>
           <p className="text-gray-300 max-w-2xl mx-auto text-lg">
-            Discover how academic excellence shapes innovative thinking and
-            professional growth.
+            Where academic rigor sparked a passion for innovation and laid the groundwork for AI-driven solutions.
           </p>
         </motion.div>
 

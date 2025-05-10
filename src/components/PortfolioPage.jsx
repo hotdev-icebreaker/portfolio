@@ -10,20 +10,7 @@ const AboutMe = () => {
         <div className="content max-w-2xl">
           <h2 className="text-[#4ECCA3] text-2xl font-bold mb-6">WHO I AM?</h2>
           <p className="text-lg leading-relaxed">
-            Hello! I’m Nazmul Hossain, a passionate JavaScript developer
-            specializing in creating innovative web solutions and user-friendly
-            interfaces. As the creator of the{" "}
-            <a className="text-[#4ECCA3] px-2" href="https://olova.js.org/">
-              OlovaJS
-            </a>{" "}
-            UI Framework, I’m dedicated to simplifying development workflows and
-            pushing the boundaries of JavaScript frameworks. My focus is on
-            making web development faster, easier, and accessible to all
-            developers. Currently, I’m expanding into backend development to
-            grow as a full-stack developer and create seamless, robust web
-            applications. I’m a lifelong learner and innovator, driven by a
-            desire to contribute to the developer community with new ideas and
-            tools that deliver real value.
+            I’m <b><i>Oleh Ozymok</i></b>, an AI-first Full Stack Developer from Ukraine with over 8 years of experience building intelligent, production-ready software. I specialize in integrating LLMs, voice interfaces, and RAG into real-world applications. My work empowers startups and enterprises to automate complex workflows, enhance user experiences, and scale smarter. I bridge AI research with scalable systems using tools like React, Node.js, Python, and AWS. Whether it's a GPT-4 chatbot, a voice agent, or an AI-powered dashboard, I turn ambitious ideas into impact-driven solutions.
           </p>
         </div>
         <div className="image-container">

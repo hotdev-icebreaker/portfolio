@@ -112,7 +112,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-semibold">Email</h3>
-                    <p className="text-gray-400">olovajs@gmail.com</p>
+                    <p className="text-gray-400">oleh.work.1994@gmail.com</p>
                   </div>
                 </div>
 
@@ -122,7 +122,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-semibold">Location</h3>
-                    <p className="text-gray-400">Laxmipure, Natore 6400</p>
+                    <p className="text-gray-400">Lviv, Ukraine</p>
                   </div>
                 </div>
               </div>
@@ -130,7 +130,8 @@ export default function Contact() {
 
             {/* Contact Form */}
             <div className="backdrop-blur-lg bg-white/5 p-8 rounded-2xl shadow-xl">
-              <form onSubmit={handleSubmit} className="space-y-6">
+              {/* <form onSubmit={handleSubmit} className="space-y-6"> */}
+              <form onSubmit={(e)=>e.preventDefault()} className="space-y-6">
                 <div className="grid grid-cols-1 gap-6">
                   <div>
                     <input

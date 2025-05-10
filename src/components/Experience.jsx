@@ -55,27 +55,27 @@ const ExperienceSection = () => {
   const experiences = [
     {
       icon: Network,
-      title: "WordPress Developer",
-      company: "Fiverr",
-      period: "2019 - 2020",
+      title: "Full Stack Developer",
+      company: "🧠 IntelliNova Solutions",
+      period: "2023 - 2025",
       description:
-        "Worked on developing and customizing WordPress websites for clients globally.",
+        "AI Full Stack Dev delivering chatbots, RAG, and voice agents for client automation.",
     },
     {
       icon: Layers,
-      title: "Junior Frontend Developer",
-      company: "Sera Programmer",
-      period: "2021 - 2023",
+      title: "AI Developer",
+      company: "🔬 Neurosoft Technologies",
+      period: "2020 - 2022",
       description:
-        "Assisted in building and optimizing user interfaces with a focus on responsive and interactive designs.",
+        "AI Engineer building LLM tools to automate workflows and decision-making..",
     },
     {
       icon: Code2,
-      title: "JavaScript Developer",
-      company: "OlovJS (Sera Programmer)",
-      period: "2023 - Present",
+      title: "Full Stack & ML Developer",
+      company: "⚙️ DataForge Dynamics",
+      period: "2017 - 2020",
       description:
-        "Contributed to developing JavaScript libraries and enhancing framework functionalities.",
+        "Full Stack Dev creating ML-powered SaaS apps with predictive and NLP features.",
     },
   ];
 
@@ -113,7 +113,7 @@ const ExperienceSection = () => {
               <div className="absolute inset-0 -z-10 bg-gradient-to-r from-cyan-500/20 to-purple-500/20 blur-3xl rounded-full" />
             </div>
             <p className="text-lg md:text-xl text-gray-400 font-medium tracking-wide text-center max-w-2xl">
-              "Transforming ideas into digital reality, one project at a time"
+              {"AI-first Full Stack Developer bridging LLMs with real-world products"}
             </p>
           </div>
 
